@@ -12,3 +12,5 @@ jobs:
       uses: actions/checkout@master
     - name: Run yamllint
       uses: actionshub/yamllint@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
