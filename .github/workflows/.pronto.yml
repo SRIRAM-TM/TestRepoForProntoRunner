@@ -1,13 +1,14 @@
-name: Pronto Ruby
-on: [push]
+name: yamllint
+
+on: [push, pull_request]
+
 jobs:
-  run:
+  delivery:
+
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v1
-    - uses: adwerx/pronto-ruby@v2.2.0
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        runners: yamllint
-        target: origin/master
+    - name: Check out code
+      uses: actions/checkout@master
+    - name: Run yamllint
+      uses: actionshub/yamllint@master
