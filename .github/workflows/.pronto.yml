@@ -9,5 +9,5 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        runners: rubocop rails_schema yamllint
+        runners: yamllint
         target: origin/master
