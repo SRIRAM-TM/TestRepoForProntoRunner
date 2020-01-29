@@ -6,3 +6,6 @@ specs:
   - spec/translation/user_management_spec.rb
   - spec/translation/solution_articles_spec.rb
   - spec/translation/solution_articles_5_spec.rb
+  
+ specs:
+  - spec/abc.rb
