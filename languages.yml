@@ -9,3 +9,4 @@ specs:
   
  specs:
   - spec/abc.rb
+  - spec/abc22.rb
