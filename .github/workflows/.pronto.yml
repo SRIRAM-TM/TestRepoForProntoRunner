@@ -1,0 +1,6 @@
+name: Pronto Ruby
+uses: AdWerx/pronto-ruby@v2.3.1
+on: [push]
+with:
+  runners: rubocop rails_schema yamllint
+  target: origin/master
